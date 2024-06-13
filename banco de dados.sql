@@ -1,0 +1,53 @@
+CREATE DATABASE mariopizza
+DEFAULT CHARACTER SET utf8
+DEFAULT COLLATE utf8_general_ci;
+
+USE mariopizza;
+
+CREATE TABLE cliente(
+id INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(200) NOT NULL,
+telefone VARCHAR(20) NOT NULL,
+endereco VARCHAR(255) NOT NULL
+) DEFAULT CHARACTER SET utf8;
+
+CREATE TABLE pizza(
+id INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(100) NOT NULL,
+valor DECIMAL(9,2) 
+)DEFAULT CHARACTER SET utf8;
+
+
+CREATE TABLE pedido(
+id INT PRIMARY KEY AUTO_INCREMENT,
+id_cliente INT,
+id_pizza INT,
+troco_de DECIMAL(9,2),
+FOREIGN KEY (id_cliente) REFERENCES cliente (id),
+FOREIGN KEY (id_pizza) REFERENCES pizza (id)
+)DEFAULT CHARACTER SET utf8;
+
+INSERT INTO pizza (nome, valor) VALUES
+('Calabresa', 25),
+('Portuguesa', 24.80);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
