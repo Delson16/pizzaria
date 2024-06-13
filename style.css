@@ -1,0 +1,251 @@
+*{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: f1;
+    src: url(Louis\ George\ Cafe\ Bold.ttf);
+}
+
+@font-face {
+    font-family: f2;
+    src: url(LEMONMILK-Light.otf);
+}
+
+@font-face {
+    font-family: f3;
+    src: url(QuattrocentoSans-BoldItalic.ttf);
+}
+
+
+:root {
+    --cor1: #41ab21;
+    --cor2: #f6fbfe;
+    --cor3: #ff0000;
+    --cor4: #11ff00;
+    --cor5: #ff8f8f;
+}
+
+body{
+   font-family: f1;
+
+
+}
+
+header{
+
+background-color: var(--cor1);
+display: flex;
+align-items: center;
+justify-content: space-around;
+font-family: f2;
+
+}
+
+#logo{
+
+width: 20vw;
+
+
+}
+
+#parallax{
+
+background-image: url(pizza-2589569_1280.jpg);
+width: 100vw;
+height: 30vh;
+background-position: fixed;
+background-size: cover;
+background-attachment: fixed;
+font-family: f2;
+display: flex;
+text-align: center;
+align-items: center;
+color: var(--cor2);
+text-shadow: 3px 3px 1px black;
+font-size: medium;
+
+}
+
+
+#chamativo{
+
+background-color: #e2e2e2;
+
+padding: 10px;
+font-family: f3;
+text-align:center ;
+align-items: center;
+
+}
+
+#pizzas{
+
+display: flex;
+justify-content: space-around;
+margin-bottom:2vh ;
+}
+
+#compre{
+    
+margin-top: 4vh;
+margin-bottom: 5vh;
+width: 50vw;
+}
+
+#form{
+margin: 2vh;
+background-color: #961010;
+width: 90vw;
+border-radius: 10px;
+padding: 10px;
+padding-top: 30px;
+font-family: f2;
+
+
+}
+
+#submit{
+font-size: x-large;
+font-family: f1;
+background-color: var(--cor1);
+color: #ffffff;
+}
+input{
+
+border-radius: 5px;
+border: none;
+font-family: f1;
+padding: 5px;
+margin-left: 3vw;
+
+}
+
+input:focus {
+    outline: none;
+  }
+
+  #cadastro{
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  label{
+color: var(--cor2);
+
+  }
+
+  #titulocas{
+font-family: f2;
+font-size: xx-large;
+color: var(--cor2);
+font-weight: bolder ;
+letter-spacing: 3px;
+
+margin-bottom: 4vh;
+  }
+
+  footer{
+margin-top: 5vh;
+background-color: #ff0000;
+font-size: 1.3rem;
+padding: 1rem;
+  }
+
+  a{
+color: var(--cor2);
+
+  }
+
+  #compre:after {
+    content: "";
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    display: block;
+    border-radius: 10px;
+    animation: expandWidth 1s forwards;
+}
+
+@keyframes expandWidth {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#compradiv{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.compra{
+  width: 90vw;
+  background-color: #961010;
+  color: var(--cor2);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.3em;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6vh;
+}
+
+.compra select{
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: .75em;
+}
+
+.compra input{
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  width: 100%;
+ 
+}
+#foto{
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.301);
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.envia{
+  cursor: pointer;
+  font-family: f1;
+  background-color: var(--cor1);
+  color: var(--cor2);
+  transition: ease .4s;
+
+}
+.envia:hover{
+  scale: 1.07;
+  transition: ease .4s;
+}
+.compra label{
+align-self: flex-start;
+
+}
+
+#submit:hover{
+  scale: 1.04;
+  transition: ease .4s;
+}
+
